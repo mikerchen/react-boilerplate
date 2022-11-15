@@ -10,6 +10,7 @@ const config = {
 		compress: true,
 		historyApiFallback: true,
 		client: { overlay: true },
+		proxy: { '/api': 'http://localhost:3000' }
 	},
 	
   entry: path.join(__dirname, 'src', 'index.js'),
